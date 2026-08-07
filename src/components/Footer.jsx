@@ -13,7 +13,7 @@ export default function Footer() {
       </p>
 
       <a
-        href="/#contact"
+        href="mailto:somsokraksa534@gmail.com?subject=Hello&body=Hi, I'd like to get in touch!"
         className="mx-auto mt-10 flex h-[60px] w-[160px] items-center justify-center rounded-2xl bg-black font-bold text-lg text-white shadow-[0_0_4px_3px_rgba(0,0,0,0.25)] transition-transform hover:scale-105 sm:h-[70px] sm:w-[220px] sm:text-2xl dark:bg-accent"
       >
         Say Hello
