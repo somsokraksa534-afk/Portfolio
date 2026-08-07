@@ -28,20 +28,23 @@ const graphicItems = Object.entries(files).map(([path, url]) => {
 export default function GraphicPage() {
   return (
     <section className="py-20">
-      <div className="mx-auto max-w-7xl px-6">
+      <div className="mx-auto max-w-7xl px-6 mt-15">
         {/* Header */}
         <div>
           <span
             className="
-            rounded-full
-            bg-zinc-100
-            px-4
-            py-2
-            text-sm
-            font-semibold
-            text-zinc-700
-            dark:bg-zinc-800
-            dark:text-zinc-300
+              inline-flex
+              items-center
+              gap-2
+              rounded-full
+              bg-blue-100
+              px-4
+              py-2
+              text-sm
+              font-semibold
+              text-blue-700
+              dark:bg-blue-900/40
+              dark:text-blue-300
             "
           >
             Graphic Design
@@ -189,15 +192,16 @@ export default function GraphicPage() {
 
               {/* Content */}
 
+              {/* Content */}
               <div className="p-6">
                 <div
                   className="
-                  flex
-                  items-center
-                  gap-2
-                  text-sm
-                  text-zinc-500
-                  "
+    flex
+    items-center
+    gap-2
+    text-sm
+    text-zinc-500
+    "
                 >
                   {item.type === "pdf" ? (
                     <FileEarmarkPdf size={18} />
@@ -210,26 +214,64 @@ export default function GraphicPage() {
 
                 <h2
                   className="
-                  mt-3
-                  text-xl
-                  font-bold
-                  capitalize
-                  text-zinc-900
-                  dark:text-white
-                  "
+    mt-3
+    text-xl
+    font-bold
+    capitalize
+    text-zinc-900
+    dark:text-white
+    "
                 >
                   {item.name}
                 </h2>
 
                 <p
                   className="
-                  mt-2
-                  text-sm
-                  text-zinc-500
-                  "
+    mt-2
+    text-sm
+    text-zinc-500
+    "
                 >
                   {item.type === "pdf" ? "PDF Document" : "Graphic Image"}
                 </p>
+
+                {/* View Button */}
+                <a
+                  href={item.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="
+    mt-5
+    flex
+    w-full
+    items-center
+    justify-center
+    rounded-xl
+    bg-zinc-900
+    px-5
+    py-3
+    text-sm
+    font-semibold
+    text-white
+    transition
+    hover:bg-zinc-700
+    dark:bg-white
+    dark:text-black
+    dark:hover:bg-zinc-200
+    "
+                >
+                  {item.type === "pdf" ? (
+                    <>
+                      <FileEarmarkPdf className="mr-2" size={18} />
+                      View PDF
+                    </>
+                  ) : (
+                    <>
+                      <Image className="mr-2" size={18} />
+                      View Image
+                    </>
+                  )}
+                </a>
               </div>
             </div>
           ))}
