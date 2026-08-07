@@ -1,41 +1,60 @@
-export default function ProjectCard({ title, description, image, category }) {
+import { Link } from "react-router-dom";
+
+export default function ProjectCard({
+  title,
+  category,
+  image,
+  description,
+  path,
+}) {
   return (
-    <div className="group h-full w-full">
+    <Link to={path} className="group block">
       <div
         className="
-          flex
           h-full
-          flex-col
           overflow-hidden
-          rounded-[28px]
+          rounded-3xl
           border
           border-zinc-200
           bg-white
+          shadow-sm
           transition-all
           duration-500
           hover:-translate-y-2
-          hover:shadow-[0_20px_60px_rgba(0,0,0,0.12)]
+          hover:shadow-2xl
           dark:border-zinc-800
-          dark:bg-[#111111]
-          dark:hover:shadow-[0_20px_60px_rgba(0,0,0,0.45)]
+          dark:bg-zinc-900
         "
       >
         {/* Header */}
         <div className="flex items-center justify-between p-6">
-          <span className="text-xs font-semibold uppercase tracking-[0.25em] text-zinc-500">
+          <span
+            className="
+              rounded-full
+              bg-zinc-100
+              px-4
+              py-2
+              text-sm
+              font-medium
+              text-zinc-700
+              dark:bg-zinc-800
+              dark:text-zinc-300
+            "
+          >
             {category}
           </span>
 
           <div
             className="
               flex
-              h-10
-              w-10
+              h-11
+              w-11
               items-center
               justify-center
               rounded-full
               border
-              border-zinc-200
+              border-zinc-300
+              text-lg
               transition-all
               duration-300
               group-hover:rotate-45
@@ -51,13 +70,13 @@ export default function ProjectCard({ title, description, image, category }) {
         </div>
 
         {/* Image */}
-        <div className="px-6">
+        <div className="overflow-hidden px-6">
           <div className="overflow-hidden rounded-2xl">
             <img
               src={image}
               alt={title}
               className="
-                h-[240px]
+                h-64
                 w-full
                 object-cover
                 transition-transform
@@ -69,33 +88,37 @@ export default function ProjectCard({ title, description, image, category }) {
         </div>
 
         {/* Content */}
-        <div className="flex flex-1 flex-col p-6">
+        <div className="flex flex-col p-6">
           <h3 className="text-2xl font-bold text-zinc-900 dark:text-white">
             {title}
           </h3>
 
-          <p className="mt-3 flex-1 text-[15px] leading-7 text-zinc-500 dark:text-zinc-400">
-            {description}
-          </p>
+          {description && (
+            <p className="mt-3 text-[15px] leading-7 text-zinc-500 dark:text-zinc-400">
+              {description}
+            </p>
+          )}
 
-          <button
+          <div
             className="
               mt-6
               flex
               items-center
               gap-2
-              font-medium
+              text-sm
+              font-semibold
               text-black
               transition-all
+              duration-300
               group-hover:gap-4
               dark:text-white
             "
           >
             View Project
             <span>→</span>
-          </button>
+          </div>
         </div>
       </div>
-    </div>
+    </Link>
   );
 }

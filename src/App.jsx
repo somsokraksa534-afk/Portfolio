@@ -5,6 +5,10 @@ import Layout from "./components/Layout";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
+import WebPage from "./pages/WebPage";
+import GraphicPage from "./pages/GraphicPage";
+import Photopage from "./pages/Photopage";
+import UxUiPage from "./pages/UxUiPage";
 
 function ScrollToHash() {
   const { pathname, hash } = useLocation();
@@ -34,6 +38,10 @@ export default function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects />} />
+            <Route path="/webproject" element={<WebPage />} />
+            <Route path="/graphicproject" element={<GraphicPage />} />
+            <Route path="/photoproject" element={<Photopage />} />
+            <Route path="/uxuiproject" element={<UxUiPage />} />
           </Routes>
         </Layout>
       </BrowserRouter>
