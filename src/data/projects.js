@@ -20,7 +20,7 @@ export const projects = [
     category: "Studio Photography",
     title: "Studio Photography",
     image: Studio,
-    path: "/studioproject",
+    path: "/photoproject",
   },
   {
     category: "UX / UI Design",

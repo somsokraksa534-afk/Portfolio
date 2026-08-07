@@ -11,17 +11,17 @@ export default function About() {
         <div className="max-w-2xl text-center lg:text-left">
           <h1 className="text-2xl font-semibold sm:text-[32px]">About Me</h1>
           <p className="mt-6 text-sm leading-relaxed sm:text-lg ">
-            I&rsquo;m a passionate Web Developer and UI/UX Designer dedicated
-            to creating modern, responsive, and user-friendly digital
-            experiences. I enjoy transforming ideas into clean, functional,
-            and visually engaging products through thoughtful design and
-            efficient code. Always learning, always building, and always
-            striving to create solutions that make a meaningful impact.
+            I&rsquo;m a passionate Web Developer and UI/UX Designer dedicated to
+            creating modern, responsive, and user-friendly digital experiences.
+            I enjoy transforming ideas into clean, functional, and visually
+            engaging products through thoughtful design and efficient code.
+            Always learning, always building, and always striving to create
+            solutions that make a meaningful impact.
           </p>
 
           <div className="mt-8 flex items-center justify-center gap-6 lg:justify-start">
             <a
-              href="https://github.com"
+              href="https://github.com/somsokraksa534-afk"
               target="_blank"
               rel="noreferrer"
               aria-label="GitHub"
@@ -30,7 +30,7 @@ export default function About() {
               <i className="bi bi-github" />
             </a>
             <a
-              href="https://t.me"
+              href="https://t.me/somsokraksa217721setec"
               target="_blank"
               rel="noreferrer"
               aria-label="Telegram"
@@ -39,7 +39,7 @@ export default function About() {
               <i className="bi bi-telegram" />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/som-sokraksa-b3751a428/"
               target="_blank"
               rel="noreferrer"
               aria-label="LinkedIn"
@@ -51,7 +51,11 @@ export default function About() {
         </div>
 
         <div className="flex h-56 w-56 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-yellow-400 via-amber-500 to-yellow-600 shadow-[0_0_4px_5px_rgba(0,0,0,0.15)] sm:h-72 sm:w-72 lg:h-[343px] lg:w-[336px] dark:shadow-[0_0_4px_5px_rgba(255,255,255,0.25)]">
-          <img src={Raksa} alt="Som Sokraksa" className="size-full rounded-full object-cover" />
+          <img
+            src={Raksa}
+            alt="Som Sokraksa"
+            className="size-full rounded-full object-cover"
+          />
         </div>
       </div>
 
@@ -67,7 +71,7 @@ export default function About() {
         <SkillGroup title="Database" skills={databaseSkills} />
         <SkillGroup title="Tools" skills={tools} />
       </section>
-      <ScrollToTop/>
+      <ScrollToTop />
     </div>
   );
 }

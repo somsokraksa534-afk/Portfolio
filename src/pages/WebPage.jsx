@@ -37,7 +37,7 @@ const projects = [
       "Responsive online phone store with product showcase, modern interface, and optimized shopping experience.",
     github: "https://github.com/somsokraksa534-afk/Website-phone-",
     demo: "https://website-phone.vercel.app/",
-    tech: ["React", "Tailwind CSS", "Vercel"],
+    tech: ["HTML", "CSS", "Responsive Design"],
   },
 ];
 

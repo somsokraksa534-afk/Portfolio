@@ -28,7 +28,7 @@ export default function Footer() {
 
       <div className="mt-8 flex items-center justify-center gap-8">
         <a
-          href="https://github.com"
+          href="https://github.com/somsokraksa534-afk"
           target="_blank"
           rel="noreferrer"
           aria-label="GitHub"
@@ -37,7 +37,7 @@ export default function Footer() {
           <i className="bi bi-github" />
         </a>
         <a
-          href="https://t.me"
+          href="https://t.me/somsokraksa217721setec"
           target="_blank"
           rel="noreferrer"
           aria-label="Telegram"
@@ -46,7 +46,7 @@ export default function Footer() {
           <i className="bi bi-telegram" />
         </a>
         <a
-          href="https://linkedin.com"
+          href="https://www.linkedin.com/in/som-sokraksa-b3751a428/"
           target="_blank"
           rel="noreferrer"
           aria-label="LinkedIn"
