@@ -13,6 +13,14 @@ const badges = [
   { label: "Database", icon: "bi-database-fill" },
   { label: "Video Editing", icon: "bi bi-camera-reels-fill" },
 ];
+const downloadCV = () => {
+  const link = document.createElement("a");
+  link.href = "../assets/cv/SomSokraksa.pdf";
+  link.download = "SomSokraksa.pdf";
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+};
 
 export default function Home() {
   return (
@@ -29,7 +37,9 @@ export default function Home() {
             Junior Web Developer
             <br />& UX/UI Designer
           </p>
-          <button className="mx-auto mt-8 flex h-[54px] w-[208px] items-center justify-center rounded-full bg-white font-semibold shadow-[0_0_4px_2px_rgba(0,0,0,0.15)] transition-transform hover:scale-105 lg:mx-0 dark:bg-[#272626] dark:shadow-[0_0_4px_2px_rgba(255,255,255,0.25)]">
+          <button
+            onClick={downloadCV}
+            className="mx-auto mt-8 flex h-[54px] w-[208px] items-center justify-center rounded-full bg-white font-semibold shadow-[0_0_4px_2px_rgba(0,0,0,0.15)] transition-transform hover:scale-105 lg:mx-0 dark:bg-[#272626] dark:shadow-[0_0_4px_2px_rgba(255,255,255,0.25)]">
             Dowload My CV
           </button>
         </div>
