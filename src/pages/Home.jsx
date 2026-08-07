@@ -4,6 +4,7 @@ import Marquee from "../components/Marquee";
 import { projects } from "../data/projects";
 import Scrolltotop from "../components/Scrolltotop";
 import Raksa from "../assets/own/Raksa.jpg";
+import CV from "../assets/cv/SomSokraksa.pdf";
 
 const badges = [
   { label: "Studio Photography", icon: "bi-camera-fill" },
@@ -13,14 +14,6 @@ const badges = [
   { label: "Database", icon: "bi-database-fill" },
   { label: "Video Editing", icon: "bi bi-camera-reels-fill" },
 ];
-const downloadCV = () => {
-  const link = document.createElement("a");
-  link.href = "../assets/cv/SomSokraksa.pdf";
-  link.download = "SomSokraksa.pdf";
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
-};
 
 export default function Home() {
   return (
@@ -37,11 +30,9 @@ export default function Home() {
             Junior Web Developer
             <br />& UX/UI Designer
           </p>
-          <button
-            onClick={downloadCV}
-            className="mx-auto mt-8 flex h-[54px] w-[208px] items-center justify-center rounded-full bg-white font-semibold shadow-[0_0_4px_2px_rgba(0,0,0,0.15)] transition-transform hover:scale-105 lg:mx-0 dark:bg-[#272626] dark:shadow-[0_0_4px_2px_rgba(255,255,255,0.25)]">
-            Dowload My CV
-          </button>
+          <a href={CV} className="mx-auto mt-8 flex h-[54px] w-[208px] items-center justify-center rounded-full bg-white font-semibold shadow-[0_0_4px_2px_rgba(0,0,0,0.15)] transition-transform hover:scale-105 lg:mx-0 dark:bg-[#272626] dark:shadow-[0_0_4px_2px_rgba(255,255,255,0.25)]">
+            Download CV
+          </a>
         </div>
 
         <div className="flex h-64 w-64 items-center justify-center rounded-full bg-gradient-to-br from-yellow-400 via-amber-500 to-yellow-600 shadow-[0_0_4px_5px_rgba(0,0,0,0.15)] sm:h-80 sm:w-80 lg:h-[464px] lg:w-[454px] dark:shadow-[0_0_4px_5px_rgba(255,255,255,0.25)]">
@@ -144,7 +135,9 @@ export default function Home() {
         id="contact"
         className="mx-auto mt-24 max-w-[1280px] scroll-mt-32 px-4 sm:px-8"
       >
-        <h2 className="text-2xl text-center sm:text-left font-bold sm:text-4xl">Send Me a Message</h2>
+        <h2 className="text-2xl text-center sm:text-left font-bold sm:text-4xl">
+          Send Me a Message
+        </h2>
         <hr className="mt-4 border-3 mb-12 max-w-[363px] border-black/20 dark:border-white" />
         <ContactForm />
       </section>
