@@ -48,7 +48,7 @@ export default function Photopage() {
               dark:text-blue-300
             "
           >
-            Graphic Design
+            Studio Photography
           </span>
 
           <h1
@@ -60,7 +60,7 @@ export default function Photopage() {
             dark:text-white
             "
           >
-            My Graphic Works
+            My Studio Photography Works
           </h1>
 
           <p
@@ -71,8 +71,8 @@ export default function Photopage() {
             dark:text-zinc-400
             "
           >
-            Collection of my graphic design projects including posters, banners,
-            brochures, calendars and plans.
+            Collection of my studio photography projects including studio photos, creative 
+            shots and visual works.
           </p>
         </div>
 

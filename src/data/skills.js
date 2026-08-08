@@ -32,8 +32,8 @@ export const backendSkills = [
 ];
 
 export const databaseSkills = [
-  { name: "SQL Server", logo: mssql, color: "#0980e5" },
-  { name: "MySQL", logo: mysql, color: "#e97000" },
+  { name: "SQL Server", logo: mssql, color: "#e97000" },
+  { name: "MySQL", logo: mysql, color: "#52609d" },
   { name: "PostgreSQL", logo: postgresql, color: "#336791" },
   { name: "phpMyAdmin", icon: "bi-database-fill-gear", color: "#f99c0e" },
 ];
