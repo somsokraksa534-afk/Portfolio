@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import ScrollToTop from "../components/Scrolltotop";
 
 import { ArrowUpRight, Github, Globe, CodeSlash } from "react-bootstrap-icons";
 
@@ -289,6 +290,7 @@ export default function WebPage() {
           ))}
         </div>
       </div>
+      <ScrollToTop />
     </section>
   );
 }

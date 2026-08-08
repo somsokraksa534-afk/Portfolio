@@ -1,4 +1,5 @@
 import { FileEarmarkPdf, Image } from "react-bootstrap-icons";
+import ScrollToTop from "../components/Scrolltotop";
 
 // Import all files from GDFolder
 const files = import.meta.glob(
@@ -277,6 +278,7 @@ export default function GraphicPage() {
           ))}
         </div>
       </div>
+      <ScrollToTop />
     </section>
   );
 }

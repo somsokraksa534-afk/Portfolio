@@ -1,4 +1,5 @@
 import { Image, FileEarmarkPdf } from "react-bootstrap-icons";
+import ScrollToTop from "../components/Scrolltotop";
 
 // Import all files from Studio
 const files = import.meta.glob(
@@ -280,6 +281,7 @@ export default function Photopage() {
           ))}
         </div>
       </div>
+      <ScrollToTop />
     </section>
   );
 }

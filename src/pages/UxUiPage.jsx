@@ -1,4 +1,5 @@
 import { ArrowUpRight, Palette, Eye } from "react-bootstrap-icons";
+import ScrollToTop from "../components/Scrolltotop";
 
 const uxuiProjects = [
   {
@@ -262,8 +263,10 @@ dark:text-black
               </a>
             </div>
           </div>
+
         ))}
       </div>
+      <ScrollToTop />
     </section>
   );
 }
