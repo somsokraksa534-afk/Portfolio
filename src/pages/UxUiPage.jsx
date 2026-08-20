@@ -1,37 +1,26 @@
 import { ArrowUpRight, Palette, Eye } from "react-bootstrap-icons";
 import ScrollToTop from "../components/Scrolltotop";
+import Zando from "../assets/uxui/zando.jpg";
+import Liber from "../assets/uxui/liber.jpg"
 
 const uxuiProjects = [
   {
     title: "Zando App",
     url: "https://www.figma.com/proto/cpGbCF408gXxQbF0wMUoed/Final_UX-UI?node-id=3343-24&t=jONEaff5W5ku6LxF-1",
-    embedUrl:
-      "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FcpGbCF408gXxQbF0wMUoed%2FFinal_UX-UI%3Fnode-id%3D3343-24%26t%3DjONEaff5W5ku6LxF-1",
+    image: Zando,
     description:
       "A comprehensive UX/UI redesign prototype for the Zando mobile app, focusing on modern aesthetics and user-friendly navigation.",
     type: "Mobile App",
   },
 
   {
-    title: "ABA App",
-    url: "https://www.figma.com/proto/jwToLuXKx6LrPpkP6BbiXX/Final-ABA-Project?node-id=0-1&t=d6ngL1j1BopdqOly-1",
-    embedUrl:
-      "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FjwToLuXKx6LrPpkP6BbiXX%2FFinal-ABA-Project%3Fnode-id%3D0-1%26t%3Dd6ngL1j1BopdqOly-1",
-    description:
-      "An improved user interface and experience prototype for the ABA banking application.",
-    type: "Banking App",
-  },
-
-  {
     title: "LibreShelf Website",
     url: "https://www.figma.com/proto/AfuGpZ2XMmjhj907EhSdRj/LibreShelf?node-id=0-1&t=PiKilnUXCzJbvECk-1",
-    embedUrl:
-      "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FAfuGpZ2XMmjhj907EhSdRj%2FLibreShelf%3Fnode-id%3D0-1%26t%3DPiKilnUXCzJbvECk-1",
+    image: Liber,
     description:
       "A user-centered website design improving online book shopping experience.",
     type: "Website Design",
   },
-
 ];
 
 export default function UxUiPage() {
@@ -124,40 +113,41 @@ dark:bg-zinc-900
 
             <div
               className="
-relative
-h-64
-overflow-hidden
-bg-zinc-100
-dark:bg-zinc-800
-"
+    relative
+    h-64
+    overflow-hidden
+    bg-zinc-100
+    dark:bg-zinc-800
+  "
             >
-              <iframe
-                src={project.embedUrl}
-                title={project.title}
+              <img
+                src={project.image}
+                alt={project.title}
                 className="
-h-full
-w-full
-transition
-duration-700
-group-hover:scale-105
-"
+      h-full
+      w-full
+      object-cover
+      transition
+      duration-700
+      group-hover:scale-105
+    "
               />
 
               <div
                 className="
-absolute
-right-4
-top-4
-flex
-h-10
-w-10
-items-center
-justify-center
-rounded-full
-bg-white/80
-backdrop-blur
-dark:bg-black/50
-"
+      absolute
+      right-4
+      top-4
+      flex
+      h-10
+      w-10
+      items-center
+      justify-center
+      rounded-full
+      bg-white/80
+      backdrop-blur
+      dark:bg-black/50
+    "
               >
                 <Eye size={18} />
               </div>
@@ -241,29 +231,28 @@ dark:text-zinc-400
                 target="_blank"
                 rel="noreferrer"
                 className="
-mt-8
-flex
-items-center
-justify-center
-gap-2
-rounded-xl
-bg-black
-py-3
-text-sm
-font-semibold
-text-white
-transition
-hover:bg-zinc-800
-dark:bg-white
-dark:text-black
-"
+                mt-8
+                flex
+                items-center
+                justify-center
+                gap-2
+                rounded-xl
+                bg-black
+                py-3
+                text-sm
+                font-semibold
+                text-white
+                transition
+                hover:bg-zinc-800
+                dark:bg-white
+                dark:text-black
+                "
               >
                 <Palette size={17} />
                 Open Figma
               </a>
             </div>
           </div>
-
         ))}
       </div>
       <ScrollToTop />

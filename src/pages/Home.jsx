@@ -13,6 +13,7 @@ const badges = [
   { label: "Graphic Design", icon: "bi-palette-fill" },
   { label: "Database", icon: "bi-database-fill" },
   { label: "Video Editing", icon: "bi bi-camera-reels-fill" },
+  { label: "UX/UI Design", icon: "bi bi-palette" },
 ];
 
 export default function Home() {
