@@ -1,7 +1,8 @@
 import { ArrowUpRight, Palette, Eye } from "react-bootstrap-icons";
 import ScrollToTop from "../components/Scrolltotop";
 import Zando from "../assets/uxui/zando.jpg";
-import Liber from "../assets/uxui/liber.jpg"
+import Liber from "../assets/uxui/liber.jpg";
+import AC from "../assets/uxui/aceleda.jpg";
 
 const uxuiProjects = [
   {
@@ -20,6 +21,15 @@ const uxuiProjects = [
     description:
       "A user-centered website design improving online book shopping experience.",
     type: "Website Design",
+  },
+
+  {
+    title: "ACELEDA App",
+    url: "https://www.figma.com/proto/bV9Mo37nuwiPjrG39qjj4w/ACE-LEDA-PJ?node-id=0-1&t=RkmkYbBQnLzm0aZN-1",
+    image: AC,
+    description:
+      "Modern and responsive interface designed with a focus on usability, visual consistency, intuitive navigation, and engaging user experiences.",
+    type: "Mobile App",
   },
 ];
 
